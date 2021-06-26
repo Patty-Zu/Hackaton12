@@ -1,0 +1,163 @@
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Viaoda Libre", cursive;
+  background:#0f0f0f;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.carrito {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.container {
+  max-width: 1600px;
+  margin: 3em auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.navbar {
+  margin: 2em 3em;
+}
+
+th {
+  padding: 1em;
+  color: rgb(156, 54, 174);
+}
+
+td {
+  padding: 1em 0;
+  font-size: 12px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+
+
+.center {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2em;
+}
+.bann {
+  background-image: url(img/banner.jpg);
+  color: white;
+  padding: 1em;
+}
+.checked {
+  color: rgb(220, 38, 47);
+}
+
+
+.product h2 {
+  font-size: 1.5em;
+  color: #577899;
+}
+
+.product p{
+    color: gray;
+}
+
+.product_img {
+  width: 250px;
+  height: 200px;
+}
+
+.shop{
+  color: white;
+  background: #577899;
+  padding: 10px 90px;
+  border: none;
+  border-radius: 25px;
+}
+
+.shop:hover {
+  background-color: rgb(94, 90, 91);
+  color: powderblue;
+}
+
+
+
+.submenu {
+  position: relative;
+}
+
+.submenu #cart {
+  display: none;
+}
+.submenu:hover #cart {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.878);
+  border: 0.5px solid rgb(64, 19, 60);
+  border-radius: 10px;
+  padding: 1em 2em;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.btn_car {
+  margin: 0 1em;
+  color: white;
+  background: rgb(54, 35, 39);
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/*******************************/
+
+form {
+	width: 250px;
+	height: 50px;
+	
+  }
+  
+   form p {
+	text-align: left;
+  }
+
+  
+  form label {
+	font-size: 25px;
+  }
+  
+  input[type="radio"] {
+	display: none;
+  }
+  
+  label {
+	color: grey;
+  }
+  
+  .calificacion {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+	color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+	color: orange;
+  }
